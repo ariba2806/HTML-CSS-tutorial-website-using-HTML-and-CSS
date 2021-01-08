@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<head>
+<title>HTML Frames</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  font-family:sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+
+  display: flex;
+
+}
+
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+
+<div class="navbar">
+ <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" class="active" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="HTMLQuiz.html">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+
+</ul>
+<br>
+
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+<h1>HTML <span class="color_h1">Iframes</span></h1>
+<hr>
+<p>An HTML iframe is used to display a web page within a web page.</p>
+<hr>
+<div style="width:100%;height:350px;overflow:hidden;">
+<iframe src="HTML.html" title="HTML Tutorial" height="350px" width="99%"></iframe>
+</div>
+<hr>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Iframe Syntax</h2></legend>
+<p>The HTML &lt;iframe&gt; tag specifies an 
+inline frame.</p>
+<p>An inline frame is used to embed another document within the current HTML document.</p>
+<fieldset style="background-color: white;">
+<h3>Syntax</h3>
+&lt;iframe src=&quot;<i>url</i>&quot; title=&quot;<em>description</em>&quot;&gt;
+</fieldset>
+<p><strong>Tip:</strong> It is a good practice to always include a 
+title attribute for the &lt;iframe&gt;. 
+This is used by screen readers to read out what the content of the iframe is.</p>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>Iframe - Set Height and Width</h2></legend>
+<p>Use the height and width attributes to specify the 
+size of the iframe.</p>
+<p>The height and width are specified in pixels by default:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+&lt;iframe src=&quot;demo_iframe.htm&quot; height=&quot;200&quot; width=&quot;300&quot; 
+  title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;
+</td>
+<td>
+                <center>
+<b>An example of HTML frames:</b>
+<br>
+<br>
+<img src="https://image.slidesharecdn.com/htmlframesandhtmlforms-160803065047/95/html-frames-and-html-forms-10-638.jpg?cb=1470207089" alt="xyz" style="border:10px solid pink;width:250px;height:200px;">
+</center>
+</td>
+</table>
+</fieldset>
+<p>Or you can add the style attribute and use 
+the CSS height and width 
+properties:</p>
+<br>
+</table>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;height:200px;width:300px;&quot; 
+  title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;
+  </fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Iframe - Remove the Border</h2></legend>
+<p>By default, an iframe has a border around it. </p>
+<p>To remove the border, add the style attribute and use the CSS 
+border property:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+&lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;border:none;&quot; 
+  title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;
+  </td>
+  <td>
+                  <center>
+<b>An example of removed border of frames:</b>
+<br>
+<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/iframe1.png" alt="xyz" style="border:10px solid LightSkyBlue;width:250px;height:200px;">
+</center>
+  </td>
+  </tr>
+  </table>
+  </fieldset>
+<p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;border:2px solid red;&quot; 
+  title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;
+  </fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<fieldset>
+<legend><h2>HTML iframe Tag</h2></legend>
+ <fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;iframe&gt;</td>
+<td>Defines an inline frame</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<h1>HTML <span class="color_h1">Layout Elements and Techniques</span></h1>
+
+<hr>
+<p>Websites often display content in multiple columns (like a magazine or 
+a newspaper).</p>
+<hr>
+
+<h3>Example</h3>
+
+
+<section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: LightSkyBlue;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: LightSkyBlue;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Heading</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">nav-bar 1</a></li>
+      <li><a href="#">nav-bar 2</a></li>
+      <li><a href="#">nav-bar 3</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>navigation bar</h1>
+    <p>Having easy-to-use navigation is important for any web site.</p>
+    <p>With CSS you can transform boring HTML menus into good-looking navigation bars.</p>
+</article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
+</section>
+
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Layout Elements</h2></legend>
+<p>HTML has several semantic elements that define the different parts of a web page:</p>
+
+
+ <fieldset style="background-color: white;">
+<table style="width:100%">
+<tr>
+<td style="vertical-align:top">
+<br>
+1)  &lt;header&gt; - Defines a header for a document or a section<br>
+2) &lt;nav&gt; - Defines a set of navigation links<br>
+3) &lt;section&gt; - Defines a section in a document<br>
+4) &lt;article&gt; - Defines an independent, self-contained 
+  content<br>
+6) &lt;footer&gt; - Defines a footer for a document or a section<br>
+<br>
+
+
+</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+
+
+<br>
+<fieldset>
+<legend><h2>Summary</h2></legend>
+<br>
+1) The HTML &lt;iframe&gt; tag specifies an 
+inline frame<br>
+2) The src 
+attribute defines the URL of the page to embed<br>
+3) Always include a 
+title attribute (for screen readers)<br>
+4) The height and width attributes specifies the 
+size of the iframe<br>
+5) Use border:none; to remove the border 
+  around the iframe<br>
+<br>
+<hr>
+</fieldset>
+
+
+  </div>
+</div>
+
+
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="table.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+  
+  </div>
+
+  <div class="col">
+   <a class="prev" href="mainstyle.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+</div>
+</body>
+</html>

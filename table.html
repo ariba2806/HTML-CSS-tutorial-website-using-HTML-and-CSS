@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Tables</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: LightSkyBlue;
+  color: white;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  font-family:sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+<div class="navbar">
+ <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+ 
+  
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" class="active" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="HTMLQuiz.html">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+</ul>
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+ 
+<h1>HTML <span class="color_h1">Tables</span></h1>
+
+<hr>
+<p>HTML tables allow web developers to arrange data into rows and 
+columns.</p>
+<hr>
+<br>
+<fieldset style="background-color: white;">
+<br>
+
+<legend><h3>Example</h3></legend>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone No.</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>XYZ</td>
+    <td>385893982</td>
+    <td>India</td>
+  </tr>
+  <tr>
+    <td>ABC</td>
+    <td>845982389</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>DEF</td>
+    <td>389329129</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>PQR</td>
+    <td>98950230</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>HIJ</td>
+    <td>28391906</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>TUV</td>
+    <td>492020657</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+</fieldset>
+
+<hr>
+<br>
+<br>
+<fieldset>
+<legend><h2>Define an HTML Table</h2></legend>
+<p>The &lt;table&gt; tag defines an HTML table.</p>
+<p>Each table row is defined with a &lt;tr&gt; tag. 
+Each table header is 
+defined with a &lt;th&gt; tag. Each table data/cell is defined with 
+a
+&lt;td&gt; tag.</p>
+<p>By default, the text in &lt;th&gt; elements 
+are bold and centered. </p>
+<p>By default, the text in &lt;td&gt; elements 
+are regular and left-aligned.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+ <h3>Example</h3>
+  <p>A simple HTML table:</p>
+&lt;table style=&quot;width:100%&quot;&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Name&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Email&lt;/th&gt; <br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Website&lt;/th&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&nbsp;
+&lt;tr&gt;<br>&nbsp; &nbsp; &lt;td&gt;Jon&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;jon@example.com&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;50&lt;/td&gt;<br>
+&nbsp;
+&lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Ann&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;ann@example.com&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;94&lt;/td&gt;<br>
+&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;
+</td>
+<td>
+      <center>
+<b>An example of a table:</b>
+<br>
+<br>
+<img src="https://4.bp.blogspot.com/-Mj4XX3Kyj7E/UwBhhXTsCcI/AAAAAAAATCI/zo02VGnqO4s/s1600/basic_simple_html_table_by_justin_wodie.png" alt="xyz" style="border:10px solid purple;width:300px;height:250px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+
+<p><strong>Note:</strong> The &lt;td&gt; elements are the data containers of the table.<br>They can contain 
+all sorts of HTML elements; text, images, lists, other tables, etc.</p>
+
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Add a Border</h2></legend>
+<p>To add a border to a table, use the CSS border property:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+table
+{<br>
+&nbsp;&nbsp;border: 1px solid red;<br>
+}
+th,td
+{
+&nbsp;&nbsp;border: 1px solid blue;}
+</td>
+<td>
+      <center>
+<b>An example of a table:</b>
+<br>
+<br>
+<img src="https://o7planning.org/en/12489/images/49854516.png" alt="xyz" style="border:10px solid orange;width:300px;height:250px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+
+<p>Remember to define borders for both the table and the table cells.</p>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Collapsed Borders</h2></legend>
+<p>To let the borders collapse into one border, add the CSS border-collapse 
+property:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ table, th, td {<br>&nbsp;&nbsp;border: 1px solid black;<br>
+  &nbsp;
+ border-collapse: collapse;<br>}
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Add Cell Padding</h2></legend>
+<p>Cell padding specifies the space between the cell content and its borders.</p>
+<p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+<p>To set the padding, use the CSS padding property:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+ th, td {<br>&nbsp; padding: 15px;<br>}
+ </td>
+ <td>
+       <center>
+<b>An example of a table:</b>
+<br>
+<br>
+<img src="https://i1.wp.com/w3codepen.com/wp-content/uploads/2019/09/cell-padding-vs-cell-spacing.png?fit=602%2C371&ssl=1" alt="xyz" style="border:10px solid pink;width:300px;height:200px;">
+</center>
+ </td>
+ </tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Left-align Headings</h2></legend>
+<p>By default, table headings are bold and centered.</p>
+<p>To left-align the table headings, use the CSS text-align property:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ th {<br>&nbsp;&nbsp;text-align: left;<br>}
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Add Border Spacing</h2></legend>
+<p>Border spacing specifies the space between the cells.</p>
+<p>To set the border spacing for a table, use the CSS border-spacing property:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+ table {<br>&nbsp; border-spacing: 5px;<br>}
+ </td>
+ <td>
+        <center>
+<b>An example of a table border spacing:</b>
+<br>
+<br>
+<img src="https://www.c-sharpcorner.com/UploadFile/eda428/css-border-property-part-2-in-html/Images/border-spacing-in-HTML.png" alt="xyz" style="border:10px solid green;width:300px;height:200px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+<p><strong>Note:</strong> If the table has collapsed borders, border-spacing has no effect.</p>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Cell that Span Many Columns</h2></legend>
+<p>To make a cell span more than one column, use the colspan attribute:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+&lt;table style=&quot;width:100%&quot;&gt;<br>&nbsp; &lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Name&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp; 
+&lt;th colspan=&quot;2&quot;&gt;Telephone&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>
+&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;td&gt;Bill Gates&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;55577854&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;td&gt;55577855&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;
+</td>
+<td>
+        <center>
+<b>An example of a table colspan:</b>
+<br>
+<br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLUiKEPlSCNFxFR_87eN3yJTPkl-muFqcaYA&usqp=CAU" alt="xyz" style="border:10px solid blue;width:300px;height:200px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Cell that Span Many Rows</h2></legend>
+<p>To make a cell span more than one row, use the rowspan attribute:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;table style=&quot;width:100%&quot;&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Name:&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Bill Gates&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; 
+&lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th rowspan=&quot;2&quot;&gt;Telephone:&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;td&gt;55577854&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;td&gt;55577855&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table - Add a Caption</h2></legend>
+<p>To add a caption to a table, use the &lt;caption&gt; tag:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+ &lt;table style=&quot;width:100%&quot;&gt;<br>&nbsp; &lt;caption&gt;Monthly savings&lt;/caption&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Month&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Savings&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;January&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;$100&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;February&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;$50&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>
+ &lt;/table&gt;
+ </td>
+ <td>
+         <center>
+<b>An example of a table caption:</b>
+<br>
+<br>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ4AAABzCAMAAABegUsVAAAAvVBMVEX////w8PCgoKAAAAD//7ZmAABmtv+Q2/+2//8AAGb/25D//9uQOgAAOpAAADrb//86AAD/tma2ZgA6kNvbkDoAZrY6AGZmADr/tpA6ADrb/7aQtv/bkGbb25CQ27Y6OpCQkNtmtrZmZgCQkDq2Zjq225Db29sAOmZmOgBmkJCQZpDbtmZmZrZmOpBmZmY6Zra2ZmbbkJBmttuQtpC2/9vb/9vb27a2/7Y6Oma2kDoAZmY6ZmYAZpDbtraQOmYMIeqjAAAEjklEQVR4nO2biXKbMBCGSQXYYGNA4DZNk/RI2iRtet/n+z9Wd1dCHMbEQZJjT7QzGdtY/PrYlWTtQjzPmTNnzpw5u8/mByG+xFm44QmzeWERp2TCZB9+wJArzlgHjzO2mHyYbh0v9OKHUy+v+uj3nh8kKYAsJp2z8019PNY+TgnPf9bGky/SZnOgAzvu4M3mtvHAEM8TYQ6B63kAkUa82byKeZypADZbwRBgyUlGLcGxcfZpzpaW8OLHE48nqR9E03wxATx0jYxxrkaiaHUUsKoVjVJeeGX0MgNG/N4KHmEgHjqjEB1XU6ZsTZRWK/QzMvmB+PTIGh7MWtExeAM7VdQN7zVa1Xjgx8YnO3izOcSr6jgk76meqqmRhyutPNmy/mQcj8ZLHsHykrw6An14S2MvUgtOnCFfvqxbFbKVRy2TFK7RDh4XIwyCBpakMDWjKU1FnLnVRKRvl6oVzA2cq3DuxSXDKSKaL04DtrI23oFZiKFJ2208DPEu8zlz5uye28Eu2YNVvDtwyVrbR7wHJkxf52AdnokL19dxeMYVHJ6OgjooU6+ykQ6UrW0lZAtRp8hzWGcOqIPph8gxessBPQKb43Eh2azkgF5z14slgta5zaxa6OSMCNbUflYENsfzA3Fpt8Hjiy7e4ecM0jkvfmIa7/A0oJIE4nEWvcC4At4VlfK4rOxEZyLclE7S0SU6DIkk3iTHY4AHGl8wmPBZ1oNWBXLMLZO0pdCPN3udcmxDeFhlxCsFvOQEUuw4W8YZptWs8APwGBZVePL1G77H2l78tMbDngvAw/PxJBxw3wOWvKHiRksghb5+nEFW3FToxwPBnC5M4JFsiH/YhQw9xYYLcq/EZoRHV1XjoVOvWnghNsRKQldADJ62Qj8epxrtssaDI4XCw/qXwitEcUr0qtLGGg/nbziEpwTkOG8p9OJR+ZPWlAae8p4KbnXxYkpUrzmeV+OJCvSw98SJaho2FHrxzqXssjv2CK/EoYN4+BUEgtagYwzu6TWMGupFLiyq9IyNS9bFawsIvLZCD56ow1L9JvlJJRwxc2GUX1wyCsYvQPffnmRimMi6EHYfv8tUaFRVCCnh5N8ZK3AlBLE/2EVXIKcZ21RYN/ZaNrw+9dsWf3N3HI+zwR/HzcX1FXZ/x2ImCdTX2c9MbXfMJZJmFRyejsK+4GnezKy2teNVbsrUtO76V5na+LtSw5naNRf3FfXENe7YDuIdTzZ/+mNA3BIeZGqzuc6dfrt4tL+9/S5vW3giU9OIrlU88aCKzuSwikeZ2i0ejdoqni9uotNzMWP9J8TjbPwI2esfNU1zeMbF9RVcpra57SOey9RGKzg8HYU9wMOiq+Z2r75ppbmp6D1YoijX3o7G7z0/GJsSDODliOcHGqkk6fxN5ZXawCsNbObpEVLzeDj0dDKhRjpvYTsqvacbXDAYfpbwPK7hvypf/jda4mY8jcd2pfi5tkLfQZpuuc4/BEidcPx/ady4LGsXMbjODNvXHzU9WVM6Ds+4wu7jmUgjXSJ597aKZySLNGZ34BJnzpw5c+bMtv0HAkJJTBufQzwAAAAASUVORK5CYII=" alt="xyz" style="border:10px solid yellow;width:300px;height:200px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+<p><strong>Note:</strong> The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag.</p>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>A Special Style for One Table</h2></legend>
+<p>To define a special style for one particular table, add an id 
+attribute to the table:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;table id=&quot;t01&quot;&gt;<br>
+&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Firstname&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Lastname&lt;/th&gt; <br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Age&lt;/th&gt;<br>
+&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Eve&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;td&gt;Jackson&lt;/td&gt; <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;94&lt;/td&gt;<br>
+&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;
+</fieldset>
+
+
+
+<h3>Now you can define a special style for this table:</h3>
+  #t01 {<br>&nbsp;&nbsp;width: 100%; <br>
+&nbsp;&nbsp;background-color: #f1f1c1;<br>}
+
+
+
+<h3>And add more styles:</h3>
+  #t01 tr:nth-child(even) {<br>
+&nbsp;&nbsp;background-color: #eee;<br>}<br>
+  #t01 tr:nth-child(odd) {<br>
+&nbsp;&nbsp;background-color: #fff;<br>}<br>
+  #t01 th {<br>&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;background-color: black;<br>}
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Summary</h2></legend>
+<br>
+1) Use the HTML &lt;table&gt; element to define a table<br>
+  2) Use the HTML &lt;tr&gt; element to define a table row<br>
+  3) Use the HTML &lt;td&gt; element to define a table data<br>
+  4) Use the HTML &lt;th&gt; element to define a table heading<br>
+  5) Use the HTML &lt;caption&gt; element to define a table caption<br>
+  6) Use the CSS border property to define a border<br>
+  7) Use the CSS border-collapse property to collapse cell borders<br>
+  8) Use the CSS padding property to add padding to cells<br>
+  9) Use the CSS text-align property to align cell text<br>
+  10) Use the CSS border-spacing property to set the spacing between cells<br>
+  11) Use the colspan attribute to make a cell span many columns<br>
+  12) Use the rowspan attribute to make a cell span many rows<br>
+  13) Use the id attribute to uniquely define one table<br>
+<br>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Table Tags</h2></legend>
+
+<fieldset style="background-color: white;">
+<br>
+<table>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;table&gt;</td>
+<td>Defines a table</td>
+</tr>
+<tr>
+<td>&lt;th&gt;</td>
+<td>Defines a header cell in a table</td>
+</tr>
+<tr>
+<td>&lt;tr&gt;</td>
+<td>Defines a row in a table</td>
+</tr>
+<tr>
+<td>&lt;td&gt;</td>
+<td>Defines a cell in a table</td>
+</tr>
+<tr>
+<td>&lt;caption&gt;</td>
+<td>Defines a table caption</td>
+</tr>
+<tr>
+<td>&lt;col&gt;</td>
+<td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+</tr>
+</table>
+</fieldset>
+
+</fieldset>
+<br>
+<br>
+  </div>
+</div>
+
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="images.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+  </div>
+
+  <div class="col">
+   <a class="prev" href="frame.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

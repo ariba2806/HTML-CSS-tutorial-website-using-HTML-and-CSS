@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Lists</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+   height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+
+  display: flex;
+}
+
+.side {
+
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+        .col-container {
+    display: table;
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+
+<div class="navbar">
+  <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+ 
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top"  href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" class="active" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="HTMLQuiz.html">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+</ul>
+
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+  <h1>HTML <span class="color_h1">Lists</span></h1>
+
+<hr>
+<p>HTML lists allow web developers to group a set of related items in lists.</p>
+<br>
+<fieldset>
+
+<legend><h3>Example</h3></legend>
+
+<fieldset style="background-color: white;">
+
+<p>An ordered HTML list:</p>
+<br>
+  1) First item<br>
+  2) Second item<br>
+  3) Third item<br>
+  4) Fourth item<br>  
+
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Unordered HTML List</h2></legend>
+<p>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the 
+&lt;li&gt; tag.</p>
+<p>The list items will be marked with bullets (small black circles) by default:</p>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+&lt;ul&gt;<br>
+&nbsp;
+&lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+&nbsp;
+&lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+</td>
+<td>
+         <center>
+<b>An example of an unordered list:</b>
+<br>
+<br>
+<img src="https://static.javatpoint.com/htmlpages/images/html-unordered-list-bulleted-list.png" alt="xyz" style="border:10px solid LightSkyBlue;width:300px;height:200px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Ordered HTML List</h2></legend>
+<p>An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.</p>
+<p>The list items will be marked with numbers by default:</p>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+&lt;ol&gt;<br>
+&nbsp;
+&lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+&nbsp;
+&lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+</td>
+<td>
+         <center>
+<b>An example of an unordered list:</b>
+<br>
+<br>
+<img src="https://www.openbookproject.net/tutorials/getdown/html/screenshots/lesson4/ordered_html.png" alt="xyz" style="border:10px solid green;width:300px;height:200px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Description Lists</h2></legend>
+<p>HTML also supports description lists.</p>
+<p>A description list is a list of terms, with a description of each term.</p>
+<p>The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt;  
+tag describes each term:</p>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+&lt;dl&gt;<br>
+&nbsp;
+&lt;dt&gt;Coffee&lt;/dt&gt;<br>
+&nbsp;
+&lt;dd&gt;- black hot drink&lt;/dd&gt;<br>
+&nbsp;
+&lt;dt&gt;Milk&lt;/dt&gt;<br>
+&nbsp;
+&lt;dd&gt;- white cold drink&lt;/dd&gt;<br>
+&lt;/dl&gt;
+</td>
+<td>
+         <center>
+<b>An example of an unordered list:</b>
+<br>
+<br>
+<img src="https://www.dummies.com/wp-content/uploads/412164.image0.jpg" alt="xyz" style="border:10px solid purple;width:300px;height:200px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML List Tags</h2></legend>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;ul&gt;</td>
+<td>Defines an unordered list</td>
+</tr>
+<tr>
+<td>&lt;ol&gt;</td>
+<td>Defines an ordered list</td>
+</tr>
+<tr>
+<td>&lt;li&gt;</td>
+<td>Defines a list item</td>
+</tr>
+<tr>
+<td>&lt;dl&gt;</td>
+<td>Defines a description list</td>
+</tr>
+<tr>
+<td>&lt;dt&gt;</td>
+<td>Defines a term in a description list</td>
+</tr>
+<tr>
+<td>&lt;dd&gt;</td>
+<td>Describes the term in a description list</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<h1>HTML <span class="color_h1">Unordered Lists</span></h1>
+
+<hr>
+<p>The HTML &lt;ul&gt; tag defines an unordered 
+(bulleted) list.</p>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>Unordered HTML List</h2></legend>
+<p>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the 
+&lt;li&gt; tag.</p>
+<p>The list items will be marked with bullets (small black circles) by default:</p>
+
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;ul&gt;<br>
+&nbsp;
+&lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+&nbsp;
+&lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ul&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Unordered HTML List - Choose List Item Marker</h2></legend>
+<p>The CSS list-style-type property is used to define the style of the 
+list item marker. It can have one of the following values:</p>
+<br>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>disc</td>
+<td>Sets the list item marker to a bullet (default)</td>
+</tr>
+<tr>
+<td>circle</td>
+<td>Sets the list item marker to a circle</td>
+</tr>
+<tr>
+<td>square</td>
+<td>Sets the list item marker to a square</td>
+</tr>
+<tr>
+<td>none</td>
+<td>The list items will not be marked</td>
+</tr>
+</table>
+</fieldset>
+<br>
+
+<fieldset style="background-color: white;">
+<h3>Example - Disc</h3>
+&lt;ul style=&quot;list-style-type:disc;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</fieldset>
+<br>
+
+<fieldset style="background-color: white;">
+<h3>Example - Circle</h3>
+
+&lt;ul style=&quot;list-style-type:circle;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</fieldset>
+<br>
+
+<fieldset style="background-color: white;">
+<h3>Example - Square</h3>
+
+&lt;ul style=&quot;list-style-type:square;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</fieldset>
+<br>
+
+<fieldset style="background-color: white;">
+<h3>Example - None</h3>
+
+&lt;ul style=&quot;list-style-type:none;&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Nested HTML Lists</h2></legend>
+<p>Lists can be nested (list inside list):</p>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+&lt;ul&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea<br>
+&nbsp; &nbsp; &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp; 
+&lt;li&gt;Black tea&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;Green tea&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&nbsp; 
+&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ul&gt;
+</td>
+<td>
+         <center>
+<b>An example of an nested list:</b>
+<br>
+<br>
+<img src="https://i.ytimg.com/vi/1KB41WtvMfk/maxresdefault.jpg" alt="xyz" style="border:10px solid pink;width:300px;height:200px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+  <p><strong>Note:</strong> A list item (&lt;li&gt;) can contain 
+  a new list, and other HTML elements, like images and links, etc.</p>
+</fieldset>
+<br>
+<br>
+<br>
+<h1>HTML <span class="color_h1">Ordered Lists</span></h1>
+
+<hr>
+<p>The HTML &lt;ol&gt; tag defines an ordered list. An 
+ordered list can be numerical or alphabetical.</p>
+<br>
+<fieldset>
+
+<legend><h2>Ordered HTML List</h2></legend>
+<p>An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.</p>
+<p>The list items will be marked with numbers by default:</p>
+
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;ol&gt;<br>
+&nbsp;
+&lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>
+&nbsp;
+&lt;li&gt;Milk&lt;/li&gt;<br>
+&lt;/ol&gt;
+
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Ordered HTML List - The Type Attribute</h2></legend>
+<p>The type attribute of the &lt;ol&gt; tag, defines the type of the 
+list item marker:</p>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>type=&quot;1&quot;</td>
+<td>The list items will be numbered with numbers (default)</td>
+</tr>
+<tr>
+<td>type=&quot;A&quot;</td>
+<td>The list items will be numbered with uppercase letters</td>
+</tr>
+<tr>
+<td>type=&quot;a&quot;</td>
+<td>The list items will be numbered with lowercase letters</td>
+</tr>
+<tr>
+<td>type=&quot;I&quot;</td>
+<td>The list items will be numbered with uppercase roman numbers</td>
+</tr>
+<tr>
+<td>type=&quot;i&quot;</td>
+<td>The list items will be numbered with lowercase roman numbers</td>
+</tr>
+</table>
+</fieldset>
+
+
+<h3>Numbers:</h3>
+
+<fieldset style="background-color: white;">
+&lt;ol type=&quot;1&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</fieldset>
+
+<h3>Uppercase Letters:</h3>
+
+<fieldset style="background-color: white;">
+&lt;ol type=&quot;A&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</fieldset>
+
+<h3>Lowercase Letters:</h3>
+
+<fieldset style="background-color: white;">
+&lt;ol type=&quot;a&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</fieldset>
+
+<h3>Uppercase Roman Numbers:</h3>
+
+<fieldset style="background-color: white;">
+&lt;ol type=&quot;I&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</fieldset>
+
+<h3>Lowercase Roman Numbers:</h3>
+
+<fieldset style="background-color: white;">
+&lt;ol type=&quot;i&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>
+&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Control List Counting</h2></legend>
+<p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:</p>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+  &lt;ol start=&quot;4&quot;&gt;<br>&nbsp; &lt;li&gt;Coffee&lt;/li&gt;<br>&nbsp; &lt;li&gt;Tea&lt;/li&gt;<br>&nbsp; 
+  &lt;li&gt;Milk&lt;/li&gt;<br>&lt;/ol&gt;
+  </td>
+  <td>
+           <center>
+<b>An example of list start count:</b>
+<br>
+<br>
+<img src="https://i.stack.imgur.com/Hk2Oe.png" alt="xyz" style="border:10px solid orange;width:300px;height:200px;">
+</center>
+  </td>
+  </tr>
+  </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+
+
+ </div>
+</div>
+
+
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="table.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+  </div>
+
+  <div class="col">
+   <a class="prev" href="othertags.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+</div>
+</body>
+</html>

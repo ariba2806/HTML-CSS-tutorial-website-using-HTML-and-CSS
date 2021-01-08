@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Forms Input</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+
+  top: 0;
+}
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover{
+  background-color: #555;
+  color: white;
+}
+
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table; 
+    width: 100%;
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+<div class="navbar">
+  <a href="HTML.html" class="active">Home</a>
+  <a href="HTMLQuiz.html">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top"  href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" class="active" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+
+</ul>
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+ <h1>HTML <span class="color_h1">Form Elements</span></h1>
+
+<hr>
+
+<p>This chapter describes all the different HTML form elements. </p>
+<br>
+<fieldset>
+<legend><h2>The HTML &lt;form&gt; Elements</h2></legend>
+<p>The HTML &lt;form&gt; element can contain one or more of the following form elements:</p>
+<br>
+1) &lt;input&gt;<br>
+2) &lt;label&gt;<br>
+3) &lt;select&gt;<br>
+4) &lt;textarea&gt;<br>
+5) &lt;button&gt;<br>
+6) &lt;fieldset&gt;<br>
+7) &lt;legend&gt;<br>
+8) &lt;datalist&gt;<br>
+9) &lt;output&gt;<br>
+10) &lt;option&gt;<br>
+
+<br>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The &lt;input&gt; Element</h2></legend>
+<p>One of the most used form element is the &lt;input&gt; element. </p>
+<p>The &lt;input&gt; element can be displayed in several ways, depending on the type 
+attribute.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+  &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;<br>&lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot;&gt;
+</fieldset>
+</fieldset>
+
+<br>
+<br>
+<fieldset>
+<legend><h2>The &lt;select&gt; Element</h2></legend>
+<p>The &lt;select&gt; element defines a drop-down list:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+  &lt;label for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;<br>&lt;select id=&quot;cars&quot; name=&quot;cars&quot;&gt;<br>&nbsp; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;<br>&nbsp; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;<br>&lt;/select&gt;
+ </td>
+ <td>
+                   <center>
+<b>An example of select in forms:</b>
+<br>
+<br>
+<img src="https://i.stack.imgur.com/M1gRq.png" alt="xyz" style="border:10px solid purple;width:250px;height:200px;">
+</center>
+ </td>
+ </tr>
+ </table>
+ </fieldset>
+
+<p>The &lt;option&gt; elements defines an option that can be 
+selected.</p>
+<p>By default, the first item in the drop-down list is selected.</p>
+<p>To define a pre-selected option, add the selected attribute 
+to the option: </p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;option value=&quot;fiat&quot; selected&gt;Fiat&lt;/option&gt;
+</fieldset>
+<h3>Visible Values:</h3>
+<p>Use the size attribute to specify the number of visible values:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  &lt;label for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;<br>&lt;select id=&quot;cars&quot; name=&quot;cars&quot; size=&quot;3&quot;&gt;<br>&nbsp; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;<br>&nbsp; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;<br>&lt;/select&gt;
+ </fieldset>
+<br>
+<h3>Allow Multiple Selections:</h3>
+<p>Use the multiple attribute to allow the user to select more than one value:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  &lt;label for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;<br>&lt;select id=&quot;cars&quot; name=&quot;cars&quot; size=&quot;4&quot;<strong> </strong>multiple&gt;<br>&nbsp; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;<br>&nbsp; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;<br>
+ &nbsp;
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;<br>&lt;/select&gt;
+</fieldset>
+<br>
+<br>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The &lt;textarea&gt; Element</h2></legend>
+<p>The &lt;textarea&gt; element defines a multi-line input field (a text area):</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;<br>The cat was playing in the garden.<br>&lt;/textarea&gt;
+</fieldset>
+<p>The rows attribute specifies the visible number of lines in 
+a text area.</p>
+<p>The cols attribute specifies the visible width of a text 
+area.</p>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<textarea rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<p>You can also define the size of the text area by using CSS:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;textarea name=&quot;message&quot; 
+  style=&quot;width:200px; height:600px;&quot;&gt;<br>The cat was playing in the garden.<br>&lt;/textarea&gt;
+  </fieldset>
+<br>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The &lt;button&gt; Element</h2></legend>
+<p>The &lt;button&gt; element defines a clickable 
+button:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;button type=&quot;button&quot; 
+ onclick=&quot;alert('Hello World!')&quot;&gt;Click Me!&lt;/button&gt;
+<p>This is how the HTML code above will be displayed in a browser:</p>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</fieldset>
+<br>
+<p><strong>Note:</strong> Always specify the type attribute for the button element. Different browsers may use different default types for the button element.
+</p>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The &lt;fieldset&gt; and &lt;legend&gt; Elements</h2></legend>
+<p>The &lt;fieldset&gt; element is used to group related data in a form.</p>
+<p>The &lt;legend&gt; element defines a caption for the 
+&lt;fieldset&gt;
+element.</p>
+<fieldset style="background-color: white;">
+ <h3>Example</h3>
+  &lt;form action=&quot;/action_page.php&quot;&gt;<br>&nbsp; &lt;fieldset&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;legend&gt;Personalia:&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp; &lt;label for=&quot;fname&quot;&gt;First 
+  name:&lt;/label&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp; &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; 
+  value=&quot;John&quot;&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp; &lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; value=&quot;Doe&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp; 
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>&nbsp; &lt;/fieldset&gt;<br>&lt;/form&gt; 
+  </fieldset>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="/action_page.php" target="_blank">
+<fieldset style="background-color: white;">
+<legend>Personalia:</legend>
+First name:<br>
+<input type="text" name="firstname" value="John"><br>
+Last name:<br>
+<input type="text" name="lastname" value="Doe"><br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form> 
+</fieldset>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>The &lt;datalist&gt; Element</h2></legend>
+<p>The &lt;datalist&gt; element specifies a list of pre-defined options for an &lt;input&gt; element.</p>
+<p>Users will see a drop-down list of the pre-defined options as they input data.</p>
+<p>The list attribute of the &lt;input&gt; element, must refer to the
+id attribute of the &lt;datalist&gt; element.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+&lt;form action=&quot;/action_page.php&quot;&gt;<br>&nbsp; &lt;input list=&quot;browsers&quot;&gt;<br>
+ &nbsp;
+ &lt;datalist id=&quot;browsers&quot;&gt;<br>
+ &nbsp;&nbsp;&nbsp; &lt;option value=&quot;Internet Explorer&quot;&gt;<br>
+&nbsp;
+&nbsp; &lt;option value=&quot;Firefox&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;option value=&quot;Chrome&quot;&gt;<br>
+&nbsp;
+&nbsp; &lt;option value=&quot;Opera&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;option value=&quot;Safari&quot;&gt;<br>
+ &nbsp;
+ &lt;/datalist&gt; <br>&lt;/form&gt;
+ </td>
+ <td>
+                    <center>
+<b>An example of datalist in forms:</b>
+<br>
+<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/SS1.png" alt="xyz" style="border:10px solid green;width:300px;height:250px;">
+</center>
+ </td>
+ </tr>
+ </table>
+ </fieldset>
+<br>
+</fieldset>
+<br>
+
+<br>
+<br>
+
+<fieldset>
+<legend><h2>HTML Form Elements</h2></legend>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;form&gt;</td>
+<td> Defines an HTML form for user input</td>
+</tr>
+<tr>
+<td>&lt;input&gt;</td>
+<td>Defines an input control</td>
+</tr>
+<tr>
+<td>&lt;textarea&gt;</td>
+<td>Defines a multiline input control (text area)</td>
+</tr>
+<tr>
+<td>&lt;label&gt;</td>
+<td>Defines a label for an &lt;input&gt; element</td>
+</tr>
+<tr>
+<td>&lt;fieldset&gt;</td>
+<td>Groups related elements in a form</td>
+</tr>
+<tr>
+<td>&lt;legend&gt;</td>
+<td>Defines a caption for a &lt;fieldset&gt; element</td>
+</tr>
+<tr>
+<td>&lt;select&gt;</td>
+<td>Defines a drop-down list</td>
+</tr>
+
+<tr>
+<td>&lt;option&gt;</td>
+<td>Defines an option in a drop-down list</td>
+</tr>
+<tr>
+<td>&lt;button&gt;</td>
+<td>Defines a clickable button</td>
+</tr>
+<tr>
+<td>&lt;datalist&gt;</td>
+<td>Specifies a list of pre-defined options for input controls</td>
+</tr>
+
+</table>
+</fieldset>
+</fieldset>
+<br>
+<hr>
+
+
+
+
+  </div>
+</div>
+
+
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="forms.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+
+  </div>
+
+  <div class="col">
+   <a class="prev" href="formattribute.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+</div>
+</body>
+</html>

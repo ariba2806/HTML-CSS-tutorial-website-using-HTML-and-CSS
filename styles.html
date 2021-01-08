@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+<head>
+<title>HTML Style Tag</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:#b0e0e6;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+<div class="navbar">
+ <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top"  class="active" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+</ul>
+
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+  <h1>HTML Styles</h1>
+
+<p class="intro">The HTML style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+<hr>
+
+<h3>Example</h3>
+<p style="font-size:20px;color:green;">Green colour</p>
+<p style="font-size:20px;color:purple;">Blue Color</p>
+<p style="font-size:36px;margin:12px 0">Black default</p>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>The HTML Style Attribute</h2></legend>
+<p>Setting the style of an HTML element, can be done with the style attribute.</p>
+<fieldset style="background-color: white;">
+<p>The HTML style attribute has the following syntax:</p>
+
+ &lt;<em>tagname</em>
+style=&quot;<em>property</em>:<em>value;</em>&quot;&gt;
+</fieldset>
+
+
+<p>The <em><strong>property</strong></em> is a CSS property. The <em><strong>value</strong></em> is a CSS value.</p>
+
+<p>You will learn more about CSS later in this tutorial <a href="mainstyle.html">HTML/CSS</a>.</p>
+
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Background Color</h2></legend>
+<p>The CSS background-color property defines the background color 
+for an HTML element.</p>
+
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>Set the background color for a page to powderblue:</p>
+
+ &lt;body style=&quot;background-color:powderblue;&quot;&gt;<br><br>&lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+  <p>Set background color for two different elements:</p>
+  &lt;body&gt;<br><br>&lt;h1 style=&quot;background-color:yellow;&quot;&gt;Background Example&lt;/h1&gt;<br>&lt;p 
+  style=&quot;background-color:green;&quot;&gt;While this paragraph's background....&lt;/p&gt;<br><br>&lt;/body&gt;
+  </td>
+  <td>
+   <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://thaljis.azureedge.net/enh/t_images/color_bg.jpg" alt="xyz" style="border:10px solid LightSkyBlue;width:250px;height:200px;">
+</center>
+  </td>
+  </tr>
+  </table>
+  </fieldset>
+
+
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Text Color</h2></legend>
+<p>The CSS colorproperty defines the text color for 
+an HTML element:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;h1 style=&quot;color:blue;&quot;&gt;This is a heading&lt;/h1&gt;<br>
+ &lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Fonts</h2></legend>
+<p>The CSS font-family property defines the font to be used  
+for an HTML element:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+
+ &lt;h1 style=&quot;font-family:arial;&quot;&gt;Arial&lt;/h1&gt;<br>&lt;p style=&quot;font-family:Times New Roman;&quot;&gt;Times New Roman&lt;/p&gt;
+ </td>
+ <td>
+    <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="http://www.newdesignfile.com/postpic/2014/09/different-types-of-text-fonts_95993.jpg" alt="xyz" style="border:10px solid green;width:250px;height:200px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>Text Size</h2></legend>
+<p>The CSS font-size property defines the text size for 
+an HTML element:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+ &lt;h1 style=&quot;font-size:300%;&quot;&gt;This is a heading&lt;/h1&gt;<br>&lt;p 
+style=&quot;font-size:160%;&quot;&gt;This is a paragraph.&lt;/p&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Text Alignment</h2></legend>
+<p>The CSS text-align property defines the horizontal text alignment for an HTML element:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+
+ &lt;h1 style=&quot;text-align:left;&quot;&gt;This text is aligned to the left&lt;/h1&gt;<br>
+ &lt;p style=&quot;text-align:center;&quot;&gt;This text is aligned to the center.&lt;/p&gt;
+ </td>
+ <td>
+     <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://www.w3docs.com/uploads/media/default/0001/01/29567c41d96d3deadd3126f023374401cf4bf05a.png" alt="xyz" style="border:10px solid purple;width:250px;height:200px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+</fieldset>
+
+
+<br>
+<br>
+<h1>HTML Text Formatting</h1>
+
+<hr>
+<p>HTML contains several elements for defining text with a special meaning.</p>
+<hr>
+
+<h3>Example</h3>
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+<hr>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Formatting Elements</h2></legend>
+
+<p>Formatting elements were designed to display special types of text:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr><td>
+ 1)&lt;b&gt; - Bold text<br>
+ 2)&lt;strong&gt; - Important text<br>
+ 3)&lt;i&gt; - Italic text<br>
+ 4)&lt;em&gt; - Emphasized text<br>
+ 5)&lt;mark&gt; - Marked text<br>
+ 6)&lt;small&gt; - Smaller text<br>
+ 7)&lt;del&gt; - Deleted text<br>
+ 8)&lt;ins&gt; - Inserted text<br>
+ 9)&lt;sub&gt;- Subscript text<br>
+ 10)&lt;sup&gt; - Superscript text<br>
+ </td>
+ <td>
+      <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://www.web4college.com/html/socialImages/html-text-formatting.png" alt="xyz" style="border:10px solid orange;width:250px;height:200px;">
+</center>
+ </td>
+ </tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<Br>
+<fieldset>
+<legend><h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2></legend>
+<p>The HTML &lt;b&gt; element defines bold text, 
+without any extra importance.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+    &lt;b&gt;This text is bold&lt;/b&gt;
+    </fieldset>
+
+<p>The HTML &lt;strong&gt; element defines text 
+with strong importance. The content inside is typically displayed in bold.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+     &lt;strong&gt;This text is 
+     important!&lt;/strong&gt;
+     
+</fieldset>
+<br>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML &lt;i&gt; and &lt;em&gt; Elements</h2></legend>
+<p>The HTML &lt;i&gt; element defines a part of 
+text in an alternate voice or mood. The content inside is typically displayed in 
+italic.</p>
+<p><strong>Tip:</strong> The &lt;i&gt; tag is often used to indicate a technical term, 
+a phrase from another language, a thought, a ship name, etc.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+    &lt;i&gt;This text is italic&lt;/i&gt;
+    </fieldset>
+<p>The HTML &lt;em&gt; element defines 
+emphasized text. The content inside is typically displayed in italic.</p>
+<p><strong>Tip:</strong> A screen reader will pronounce the words in &lt;em&gt; 
+with an emphasis, using verbal stress.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+    &lt;em&gt;This text is 
+ emphasized&lt;/em&gt;
+ </td>
+ <td>
+       <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://codescracker.com/html/images/html-italics-emphasized-texts.jpg" alt="xyz" style="border:10px solid pink;width:250px;height:200px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML &lt;mark&gt; Element</h2></legend>
+<p>The HTML &lt;mark&gt; element defines text 
+that should be marked or highlighted:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  &lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;<br>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML &lt;del&gt; Element</h2></legend>
+<p>The HTML &lt;del&gt; element defines text 
+that has been deleted from a document. Browsers will usually strike a line 
+through deleted text:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;<br>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML &lt;sub&gt; Element</h2></legend>
+<p>The HTML &lt;sub&gt; element defines 
+subscript text. Subscript text appears half a character below the normal line, 
+and is sometimes rendered in a smaller font. Subscript text can be used for 
+chemical formulas, like H<sub>2</sub>O:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;p&gt;This 
+ is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;<br>
+</fieldset>
+
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML &lt;sup&gt; Element</h2></legend>
+<p>The HTML &lt;sup&gt; element defines 
+superscript text. Superscript text appears half a character above the normal 
+line, and is sometimes rendered in a smaller font. Superscript text can be used 
+for footnotes, like WWW<sup>[1]</sup>:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+ &lt;p&gt;This 
+ is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;<br>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Text Formatting Elements</h2></legend>
+<br>
+<br>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;b&gt;</td>
+<td>Defines bold text</td>
+</tr>
+<tr>
+<td>&lt;em&gt;</td>
+<td>Defines emphasized text&nbsp;</td>
+</tr>
+<tr>
+<td>&lt;i&gt;</td>
+<td>Defines a part of text in an alternate voice or mood</td>
+</tr>
+<tr>
+<td>&lt;small&gt;</td>
+<td>Defines smaller text</td>
+</tr>
+<tr>
+<td>&lt;strong&gt;</td>
+<td>Defines important text</td>
+</tr>
+<tr>
+<td>&lt;sub&gt;</td>
+<td>Defines subscripted text</td>
+</tr>
+<tr>
+<td>&lt;sup&gt;</td>
+<td>Defines superscripted text</td>
+</tr>
+<tr>
+<td>&lt;ins&gt;</td>
+<td>Defines inserted text</td>
+</tr>
+<tr>
+<td>&lt;del&gt;</td>
+<td>Defines deleted text</td>
+</tr>
+<tr>
+<td>&lt;mark&gt;</td>
+<td>Defines marked/highlighted text</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h1>HTML Comments</h1></legend>
+
+<hr>
+<p>HTML comments are not displayed in the browser, but they can 
+help document your HTML source code.</p>
+
+<h2>HTML Comment Tags</h2>
+<p>You can add comments to your HTML source by using the following syntax:</p>
+
+&lt;!-- Write your comments here --&gt;
+
+<p>Notice that there is an exclamation point (!) in the start tag, but not in the 
+end tag.</p>
+
+  <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+
+
+<p>With comments you can place notifications and reminders in your HTML code:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+&lt;!-- This is a comment --&gt;<br><br>&lt;p&gt;This is HTML Comments Example.&lt;/p&gt;<br>
+<br>&lt;!-- Remember to add more information here --&gt;
+</td>
+<td>
+       <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://codescracker.com/html/images/html-comments.jpg" alt="xyz" style="border:10px solid black;width:250px;height:200px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+<p>Comments are also great for debugging HTML, because you can 
+comment out HTML lines of code, one at a time, to search for errors:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+&lt;!-- Do not display this image at the moment<br>
+&lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot; 
+alt=&quot;Trulli&quot;&gt;<br>
+--&gt;
+
+</fieldset>
+<br>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Summary</h2></legend>
+<br>
+  1)Use the style attribute for styling HTML elements<br>
+  2)Use background-color for background color<br>
+  3)Use color for text colors<br>
+  4)Use font-family for text fonts<br>
+  5)Use font-size for text sizes<br>
+  6)Use text-align for text alignment<br>
+</fieldset>
+
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="intro.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+  </div>
+
+  <div class="col">
+   <a class="prev" href="styling.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

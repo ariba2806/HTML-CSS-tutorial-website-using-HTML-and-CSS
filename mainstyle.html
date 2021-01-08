@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<head>
+<title>HTML/CSS</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+<div class="navbar">
+  <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+ 
+ 
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" class="active" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+</ul>
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+  <h1>HTML Styles - CSS</h1>
+
+<hr>
+<p class="intro">CSS stands for Cascading Style Sheets.</p>
+<p class="intro">CSS saves a lot of work. It can control the layout of multiple 
+web pages all at once.</p>
+<hr>
+
+
+<br>
+
+<hr>
+<br>
+<fieldset>
+<legend><h2>What is CSS?</h2></legend>
+<p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
+<p>With CSS, you can control the color, font, the size of text, the spacing 
+between elements, how elements are positioned and laid out, what background 
+images or background colors to be used, different displays for different devices 
+and screen sizes, and much more!</p>
+
+<p><strong>Tip:</strong> The word <strong>cascading</strong> means that a style 
+applied to a parent element will also apply to all children elements within the 
+parent. So, if you set the color of the body text to &quot;blue&quot;, all headings, 
+paragraphs, and other text elements within the body will also get the same color (unless you specify 
+something else)!</p>
+
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Using CSS</h2></legend>
+<p>CSS can be added to HTML documents in 3 ways:</p>
+
+  1)<strong>Inline</strong> - by using the style attribute inside HTML elements<br>
+  2)<strong>Internal</strong> - by using a &lt;style&gt; element in the &lt;head&gt;section<br>
+  3)<strong>External</strong> - by using a &lt;link&gt; 
+  element to link to an external CSS file<br>
+
+<p>The most common way to add CSS, is to keep the styles in external CSS 
+files. However, in this tutorial we will use inline and internal styles, because this is easier to 
+demonstrate, and easier for you to try it yourself.</p>
+</fieldset>
+<br>
+<br><br>
+<fieldset>
+<legend><h2>Inline CSS</h2></legend>
+<p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+<p>An inline CSS uses the style attribute of an HTML element.</p>
+<p>The following example sets the text color of the &lt;h1&gt; element to blue, 
+and the text color of the &lt;p&gt; element to red:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+ &lt;h1 style=&quot;color:blue;&quot;&gt;A Blue Heading&lt;/h1&gt;<br><br>&lt;p 
+  style=&quot;color:red;&quot;&gt;A red paragraph.&lt;/p&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Internal CSS</h2></legend>
+<p>An internal CSS is used to define a style for a single HTML page.</p>
+<p>An internal CSS is defined in the&lt;head&gt; section of an HTML page, 
+within a &lt;style&gt; element.</p>
+<p>The following example sets the text color of ALL the &lt;h1&gt; elements 
+(on that page) to blue, and the text color of ALL the &lt;p&gt; elements to 
+red. In addition, the page will be displayed with a &quot;powderblue&quot; background 
+color:&nbsp;</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>
+ body {background-color: powderblue;}<br>h1&nbsp;&nbsp; {color: blue;}<br>p&nbsp;&nbsp;&nbsp; {color: red;}<br>
+&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a 
+ heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+ </td>
+ <td>
+    <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://codescracker.com/html/images/html-text-color.jpg" alt="xyz" style="border:10px solid pink;width:300px;height:250px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>External CSS</h2></legend>
+<p>An external style sheet is used to define the style for many HTML pages.</p>
+<p>To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>
+&nbsp; &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;<br>
+&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+</fieldset>
+<p>The external style sheet can be written in any text editor. The file must not contain any 
+HTML code, and must be saved with a .css extension.</p>
+<p>Here is how the &quot;styles.css&quot; file looks like:</p>
+
+<h3>&quot;styles.css&quot;:</h3>
+ body {<br>&nbsp;&nbsp;background-color: powderblue;<br>}<br>h1 {<br>&nbsp; color: blue;<br>}<br>p {<br>&nbsp;&nbsp;color: red;<br>}
+
+<p><strong>Tip:</strong> With an external style sheet, you can change the look of an entire web site, by changing one file!</p>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>CSS Colors, Fonts and Sizes</h2></legend>
+<p>Here, we will demonstrate some commonly used CSS properties. You will learn 
+more about them later.</p>
+<p>The CSS color property defines the text color to be used.</p>
+<p>The CSS font-family property defines the font to be used.</p>
+<p>The CSS font-size property defines the text size to be used.</p>
+<br>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+  <p>Use of CSS color, font-family and font-size properties:</p>
+
+&lt;!DOCTYPE html&gt;<br>
+ &lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>h1 {<br>&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;font-family: verdana;<br>&nbsp;&nbsp;font-size: 300%;<br>}<br>p&nbsp;{<br>
+  &nbsp; color: red;<br>&nbsp; 
+ font-family: courier;<br>&nbsp; font-size: 160%;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>
+ &lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+ </td>
+ <td>
+     <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://www.tutorialbrain.com/wp-content/uploads/2019/02/Font-in-HTML.jpg" alt="xyz" style="border:10px solid purple;width:330px;height:250px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>CSS Border</h2></legend>
+<p>The CSS border property defines a border 
+around an HTML element.</p>
+<p><strong>Tip:</strong> You can define a border for nearly all HTML elements.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+  <p>Use of CSS border property:&nbsp;</p>
+ p {<br>&nbsp;&nbsp;border: 2px 
+solid powderblue;}
+ p {&nbsp;&nbsp;border: 2px 
+dashed blue;<br>}<br>
+</td>
+<td>
+     <center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://s3.amazonaws.com/webucator-how-tos/2304.png" alt="xyz" style="border:10px solid LightSkyBlue;width:350px;height:300px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>CSS Padding</h2></legend>
+<p>The CSS padding property defines a padding 
+(space) between the text and the border.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>Use of CSS border and padding properties:</p>
+ p {<br>&nbsp; border: 2px 
+solid powderblue;<br>&nbsp; padding: 30px;<br>}
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>CSS Margin</h2></legend>
+<p>The CSS margin property defines a margin 
+(space) outside the border.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+  <p>Use of CSS border and margin properties:</p>
+ p {<br>&nbsp; border: 2px 
+solid yellow;<br>&nbsp;&nbsp;margin: 50px;<br>
+ }<p> </p>
+ </td>
+ <td>
+      <center>
+<b>Differentiation of margin and padding area:</b>
+<br>
+<br>
+<img src="https://image-proxy-cdn.teamtreehouse.com/e4314d5c336cc352a806606bac61d4cffd46ae69/687474703a2f2f692e737461636b2e696d6775722e636f6d2f6e4e4b48682e676966" alt="xyz" style="border:10px solid black;width:300px;height:250px;">
+</center>
+ </td>
+ </tr>
+ </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Link to External CSS</h2></legend>
+<p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>This example uses a full URL to link to a style sheet:</p>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.xyz.com/html/styles.css&quot;&gt;
+<p>
+</fieldset>
+
+
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+<p>This example links to a style sheet located in the html folder on the current web site:&nbsp;</p>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/html/styles.css&quot;&gt;
+
+<p>
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>This example links to a style sheet located in the same folder as the current page:</p>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+<p>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Summary</h2></legend>
+<br>
+  1) Use the HTML style attribute for inline styling<br>
+  2) Use the HTML &lt;style&gt; element to define internal CSS<br>
+  3) Use the HTML &lt;link&gt; element to refer to an external CSS file<br>
+  4) Use the HTML &lt;head&gt; element to store &lt;style&gt; and &lt;link&gt; elements<br>
+  5) Use the CSS color property for text colors<br>
+  6) Use the CSS font-family property for text fonts<br>
+  7) Use the CSS font-size property for text sizes<br>
+  8) Use the CSS border property for borders<br>
+  9) Use the CSS padding property for space inside the border<br>
+  10) Use the CSS margin property for space outside the border<br>
+
+</fieldset>
+
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Style Tags</h2></legend>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;style&gt;</td>
+<td>Defines style information for an HTML document</td>
+</tr>
+<tr>
+<td>&lt;link&gt;</td>
+<td>Defines a link between a document and an external resource </td>
+</tr>
+</table>
+</fieldset>
+<br>
+</fieldset>
+
+  </div>
+</div>
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="frame.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+  </div>
+
+  <div class="col">
+   <a class="prev" href="list.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

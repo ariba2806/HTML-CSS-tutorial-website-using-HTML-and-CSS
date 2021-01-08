@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Images</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.row {  
+  display: flex;
+}
+
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+
+
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+<div class="navbar">
+  <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+  
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" class="active" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+</ul>
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+  <h1>HTML <span class="color_h1">Images</span></h1>
+
+<hr>
+<p>Images can improve the design and the appearance of a web page.</p>
+<hr>
+
+
+<img src="https://qph.fs.quoracdn.net/main-qimg-f7ec7046fcb86d842ccbba1467867bb7" alt="xyz" style="border:10px solid black;float:left;width:550px;height:250px;">
+<img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2015/07/Valley-of-flowers-uttrakhand.jpg" alt="xyz" style="border:10px double black;float:right;width:550px;height:250px;">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<Br>
+<h3>Example</h3>
+ &lt;img src=&quot;img_mountain.jpg&quot; 
+alt=&quot;Mountain&quot;&gt;
+
+<h3>Example</h3>
+
+ &lt;img src=&quot;img_chania.jpg&quot; 
+alt=&quot;Flowers in Chania&quot;&gt;<br>
+<hr>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Images Syntax</h2></legend>
+<p>The HTML &lt;img&gt; tag is used to embed an 
+image in a web page.</p>
+<p>Images are not technically inserted into a web page; images are linked to web 
+pages. The &lt;img&gt; tag creates a holding 
+space for the referenced image.</p>
+<p>The &lt;img&gt; tag&nbsp;is empty, it contains attributes only, and does not 
+have a closing tag.</p>
+<p>The &lt;img&gt; tag has two required 
+attributes:</p>
+
+  1) src - Specifies the path to the image<br>
+  2) alt - Specifies an alternate text for the image<br>
+<br>
+<fieldset style="background-color: white;">
+<h3>Syntax</h3>
+
+&lt;img src=&quot;<i>url</i>&quot; alt=&quot;<em>alternatetext</em>&quot;&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>The src Attribute</h2></legend>
+<p>The required src attribute specifies the path (URL) to the image.</p>
+<p><strong>Note:</strong> When a web page loads; it is the browser, at that 
+moment, that gets the image from a web server and inserts it into the page. 
+Therefore, make sure that the image actually stay in the same spot in relation 
+to the web page, otherwise your visitors will get a broken link icon. The broken 
+link icon is shown if the browser cannot find the image.</p>
+<fieldset style="background-color: white;">
+  <h3>Example</h3>
+
+&lt;img src=&quot;img_chania.jpg&quot; alt=&quot;Flowers 
+  in Chania&quot;&gt;
+
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>The alt Attribute</h2></legend>
+<p>The required alt attribute provides an alternate text for an image, if the user for 
+some reason cannot view it (because of slow connection, an error in the src 
+attribute, or if the user uses a screen reader).</p>
+<p>The value of the alt attribute should describe the image:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+  <h3>Example</h3>
+
+&lt;img src=&quot;img_chania.jpg&quot; alt=&quot;Flowers 
+  in Chania&quot;&gt;
+<p>If a browser cannot find an image, it will display the value of the alt 
+attribute:</p>
+</td>
+<td>
+            <center>
+<b>An example of alt tag:</b>
+<br>
+<br>
+<img src="https://cdn3.wpbeginner.com/wp-content/uploads/2014/10/broken-img-alt-text.jpg" alt="xyz" style="border:10px solid LightSkyBlue;width:340px;height:250px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+&lt;img src=&quot;wrongname.gif&quot; alt=&quot;Flowers 
+  in Chania&quot;&gt;
+<p><strong>Tip:</strong> A screen reader is a software program that reads the HTML code, and allows the user to &quot;listen&quot; to the content. Screen readers are useful 
+for people who are visually impaired or learning disabled.</p>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Image Size - Width and Height</h2></legend>
+<p>You can use the style attribute to specify the width and 
+height of an image.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; style=&quot;width:500px;height:600px;&quot;&gt;
+
+<p>Alternatively, you can use the width and height attributes:</p>
+</td>
+<td>
+            <center>
+<b>An example of different heighted images:</b>
+<br>
+<br>
+<img src="https://cdn.vox-cdn.com/thumbor/LcxeJkr-J9rb3vYtMRqpuYE_Zpo=/0x0:1253x835/1200x800/filters:focal(0x0:1253x835)/cdn.vox-cdn.com/uploads/chorus_image/image/47817345/twtr.0.0.jpg" alt="xyz" style="border:10px solid orange;width:340px;height:250px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+&lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl in a jacket&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;
+
+<p>The width and height attributes always define the width and height of the 
+image in pixels.</p>
+</fieldset>
+  <p><strong>Note:</strong> Always specify the width and height of an image. If width and height are not specified, the 
+  web page 
+  might flicker while the image loads.</p>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Width and Height, or Style?</h2></legend>
+<p>The width, height, and style attributes are 
+all valid in HTML.</p>
+<p>However, we suggest using the style attribute. It prevents styles sheets from changing 
+the size of images:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>img { <br>&nbsp;&nbsp;width: 100%; <br>}<br>
+ &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;<br><br>&lt;img src=&quot;html5.gif&quot; alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Images in Another Folder</h2></legend>
+<p>If you have your images in a sub-folder, you must include the folder 
+name in the src attribute:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+&lt;img src=&quot;/images/html5.gif&quot; 
+alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;
+
+</fieldset>
+</fieldset>
+<br>
+<br>
+
+<br>
+<br>
+<fieldset>
+
+<legend><h2>Animated Images</h2></legend>
+<p>HTML allows animated GIFs:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+&lt;img src=&quot;programming.gif&quot; alt=&quot;Computer Man&quot; style=&quot;width:48px;height:48px;&quot;&gt;
+<hr>
+</td>
+<td>
+            <center>
+<b>We can add briliant animated gifs to our page:</b>
+<br>
+<br>
+<img src="https://ph-files.imgix.net/455a2240-af3d-42df-b9e0-3a8aa0dde6a7?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=221&h=221&fit=max" alt="xyz" style="border:10px solid pink;width:340px;height:250px;">
+</center>
+
+</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Image as a Link</h2></legend>
+<p>To use an image as a link, put the &lt;img&gt; tag inside the &lt;a&gt; 
+tag:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+&lt;a href=&quot;default.asp&quot;&gt;<br>&nbsp; &lt;img src=&quot;smiley.gif&quot; alt=&quot;HTML tutorial&quot; 
+style=&quot;width:42px;height:42px;&quot;&gt;<br>&lt;/a&gt;
+
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>Image Floating</h2></legend>
+<p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+
+&lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot;
+style=&quot;float:right;width:42px;height:42px;&quot;&gt;<br>
+ The image will float to the right of 
+the text.&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src=&quot;smiley.gif&quot; alt=&quot;Smiley face&quot;
+style=&quot;float:left;width:42px;height:42px;&quot;&gt;<br>
+ The image will float to the left of 
+the text.&lt;/p&gt;
+</td>
+<td>
+<center>
+<b>Floating Images:</b>
+<br>
+<br>
+<img src="https://lh4.googleusercontent.com/-P-MsEKlMZi4/UkLJQdWErkI/AAAAAAAAAYA/F93J7DKS0UQ/s642/CU01034D_1.png" alt="xyz" style="border:10px solid black;width:340px;height:250px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+
+<hr>
+
+
+<br>
+<fieldset>
+<legend><h2>HTML Image Tags</h2></legend>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;img&gt;</td>
+<td>Defines an image</td>
+</tr>
+<tr>
+<td>&lt;map&gt;</td>
+<td>Defines an image map</td>
+</tr>
+<tr>
+<td>&lt;area&gt;</td>
+<td>Defines a clickable area inside an image map</td>
+</tr>
+<tr>
+<td>&lt;picture&gt;</td>
+<td>Defines a container for multiple image resources</td>
+</tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<h1>HTML <span class="color_h1">Background Images</span></h1>
+<hr>
+<p>A background image can be specified for almost any HTML element.</p>
+<br>
+<fieldset>
+<legend><h2>Background Image on a HTML element</h2></legend>
+<p>To add a background image on an HTML element, use the HTML style attribute 
+and the CSS background-image property:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+  <h3>Example</h3>
+  <p>Add a background image on a HTML element:</p>
+  &lt;div style=&quot;background-image: url('img_girl.jpg');&quot;&gt;
+
+<p>You can also specify the background image in the &lt;style&gt; 
+element, in the &lt;head&gt; 
+section:</p>
+</td>
+<td>
+<center>
+<b>An example of background image:</b>
+<br>
+<br>
+<img src="https://superdevresources.com/wp-content/uploads/2015/01/full-screen-background-image.jpg" alt="xyz" style="border:10px solid purple;width:340px;height:250px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>Specify the background image in the &lt;style&gt; 
+  element:</p>
+  &lt;style&gt;<br>div {<br>&nbsp; background-image: url('img_girl.jpg');<br>
+  }<br>&lt;/style&gt;
+  </fieldset>
+  </fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Background Image on a Page</h2></legend>
+<p>If you want the entire page to have a background image, you must 
+specify the background image on the &lt;body&gt; element:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>Add a background image for the entire page:</p>
+  &lt;style&gt;<br>body {<br>&nbsp; background-image: url('img_girl.jpg');<br>
+  }<br>&lt;/style&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Background Repeat</h2></legend>
+<p>If the background image is smaller than the element, the image will repeat itself, 
+horizontally and vertically, until it reaches the end of the element:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+  &lt;style&gt;<br>body {<br>&nbsp; background-image: url('example_img_girl.jpg');<br>}<br>&lt;/style&gt;
+  </td>
+  <td>
+ <center>
+<b>An example of background-repeat image:</b>
+<br>
+<br>
+<img src="https://www.ntchosting.com/images/examples/background-image-property.jpg" alt="xyz" style="border:10px solid green;width:300px;height:250px;">
+</center> 
+  </td>
+  </tr>
+  </table>
+</fieldset>
+<p>To avoid the background image from repeating itself, set the background-repeat property 
+to no-repeat.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  &lt;style&gt;<br>body {<br>&nbsp; background-image: url('example_img_girl.jpg');<br>&nbsp; 
+  background-repeat: no-repeat;<br>}<br>&lt;/style&gt;
+  </fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Background Cover</h2></legend>
+<p>If you want the background image to cover the entire element, you 
+can set the background-size property to
+cover.</p>
+<p>Also, to make sure the entire element is always covered, set the 
+background-attachment property to fixed:</p>
+<p>This way, the background image will cover the entire element, with no stretching (the image will 
+keep its original proportions):</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  &lt;style&gt;<br>body {<br>&nbsp; background-image: url('img_girl.jpg');<br>&nbsp; 
+  background-repeat: no-repeat;<br>&nbsp; background-attachment: fixed; <br>&nbsp; 
+  background-size: cover;<br>
+  }<br>&lt;/style&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Background Stretch</h2></legend>
+<p>If you want the background image to stretch to fit the entire element, you 
+can set the background-size property to
+100% 100%: </p>
+
+<p>Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+  &lt;style&gt;<br>body {<br>&nbsp; background-image: url('img_girl.jpg');<br>&nbsp; 
+  background-repeat: no-repeat;<br>&nbsp; background-attachment: fixed; <br>&nbsp; 
+  background-size: 100% 100%;<br>
+  }<br>&lt;/style&gt;
+  </td>
+  <td>
+   <center>
+<b>An example of background-repeat image:</b>
+<br>
+<br>
+<img src="https://dynamicsgphome.files.wordpress.com/2019/12/image-1420.png" alt="xyz" style="border:10px solid red;width:300px;height:250px;">
+</center> 
+  </td>
+  </tr>
+  </table>
+  </fieldset>
+  </fieldset>
+<hr>
+<br>
+<br>
+<fieldset>
+<legend><h2>Summary</h2></legend>
+<br>
+  1) Use the HTML &lt;img&gt; element to define an image<br>
+  2) Use the HTML src attribute to define the URL of the image<br>
+  3) Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed<br>
+  4) Use the HTML width and height attributes 
+  or the CSS width and height 
+  properties to define the size of the image<br>
+  5) Use the CSS float property to let the image float 
+  to the left or to the right<br>
+<br>
+  <p><strong>Note:</strong> Loading large images takes time, and can slow down your 
+  web page. Use images carefully.</p>
+<hr>
+</fieldset>
+  </div>
+</div>
+
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="links.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+  </div>
+
+  <div class="col">
+   <a class="prev" href="table.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

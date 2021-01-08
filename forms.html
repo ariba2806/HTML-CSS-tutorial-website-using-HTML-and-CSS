@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Forms</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  
+  display: flex;
+}
+
+.side {
+
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+ 
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+<div class="navbar">
+  <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" class="active" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="HTMLQuiz.html">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+
+</ul>
+<br>
+
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+ <h1>HTML <span class="color_h1">Forms</span></h1>
+<hr>
+
+<p>An HTML form is used to collect user input. The user input is 
+most often sent to a server for processing. </p>
+<hr>
+<fieldset>
+<br>
+<br>
+<legend><h3>Example</h3></legend>
+ <fieldset style="background-color: white;">
+<form action="/action_page.php" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>The &lt;form&gt; Element</h2></legend>
+<p>The HTML &lt;form&gt; element is used to 
+create an HTML form for user input:</p>
+ <fieldset style="background-color: white;">
+ &lt;form&gt;<br>
+ .<br>
+<i>form elements</i><br>
+ .<br>
+ &lt;/form&gt;<br>
+ </fieldset>
+
+<p>The &lt;form&gt; element is a container for different types of input elements, 
+such as: text fields, checkboxes, radio 
+buttons, submit buttons, etc.</p>
+<p>All
+the different form elements are covered in the next chapter:
+</fieldset>
+</p>
+
+<br>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>The &lt;input&gt; Element</h2></legend>
+<p>The HTML &lt;input&gt; element is the most 
+used form element. </p>
+<p>An &lt;input&gt; element can be displayed in 
+many ways, depending on the type 
+attribute.</p>
+<p>Here are some examples:</p>
+ <fieldset style="background-color: white;">
+<table>
+ <tr>
+  <th>Type</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;text&quot;&gt;</td>
+  <td>Displays a single-line text input field</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;radio&quot;&gt;</td>
+  <td>Displays a radio button (for selecting one of many choices)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;check&quot;&gt;</td>
+  <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;submit&quot;&gt;</td>
+  <td>Displays a submit button (for submitting the form)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;button&quot;&gt;</td>
+  <td>Displays a clickable button</td>
+ </tr>
+ </table>
+ </fieldset>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>Text Fields</h2></legend>
+<p>The &lt;input type="text"&gt; defines a single-line input field for 
+text input.</p>
+ <fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>A form with two text input fields:</p>
+ &lt;form&gt;<br>
+  &nbsp; &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input 
+  type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot;&gt;&lt;br&gt;<br>&nbsp; &lt;label for=&quot;lname&quot;&gt;Last 
+  name:&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname"&gt;<br>&lt;/form&gt;
+</fieldset>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form>
+First name:<br>
+<input type="text" name="fname"><br>
+Last name:<br>
+<input type="text" name="lname">
+</form>
+<p><b>Note:</b> The form itself is not visible. Also note that the default width 
+of an input field is 20 characters.</p>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The &lt;label&gt; Element</h2></legend>
+<p>Notice the use of the &lt;label&gt; element in the 
+example above. </p>
+<p>The &lt;label&gt; tag defines a label for many 
+form elements.</p>
+<p>The &lt;label&gt; element is useful for 
+screen-reader users, because the screen-reader will read out loud the label when 
+the user focus on the input element.</p>
+<p>The &lt;label&gt; element also help users who have 
+difficulty clicking on very small regions (such as radio buttons or checkboxes) 
+- because when the user clicks the text within the &lt;label&gt; element, it toggles 
+the radio button/checkbox.</p>
+<p>The for attribute of the &lt;label&gt; tag should 
+be equal to the id attribute of the &lt;input&gt;  
+element to bind them together. </p>
+</fieldset>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>Radio Buttons</h2></legend>
+<p>The &lt;input type="radio"&gt; defines a radio button.</p>
+<p>Radio buttons let a user select ONE of a limited number of choices.</p>
+<fieldset style="background-color: white;">
+ <h3>Example</h3>
+  <p>A form with radio buttons:</p>
+ &lt;form&gt;<br>&nbsp; &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; 
+  value=&quot;male&quot;&gt;<br>&nbsp; &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input 
+  type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;<br>&nbsp; &lt;label 
+  for=&quot;female&quot;&gt;Female&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;radio&quot; id=&quot;other&quot; 
+  name=&quot;gender&quot; value=&quot;other&quot;&gt;<br>&nbsp; &lt;label for=&quot;other&quot;&gt;Other&lt;/label&gt;<br>&lt;/form&gt;
+  </fieldset>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>Checkboxes</h2></legend>
+<p>The &lt;input type=&quot;checkbox&quot;&gt; defines a <strong>checkbox</strong>.</p>
+<p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+<fieldset style="background-color: white;">
+ <h3>Example</h3>
+  <p>A form with checkboxes:</p>
+ &lt;form&gt;<br>&nbsp; &lt;input type=&quot;checkbox&quot; id=&quot;vehicle1&quot; name=&quot;vehicle1&quot; value=&quot;Bike&quot;&gt;<br>&nbsp; 
+  &lt;label for=&quot;vehicle1&quot;&gt; I have a bike&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input 
+  type=&quot;checkbox&quot; id=&quot;vehicle2&quot; name=&quot;vehicle2&quot; value=&quot;Car&quot;&gt;<br>&nbsp; &lt;label for=&quot;vehicle2&quot;&gt; 
+  I have a car&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;checkbox&quot; 
+  id=&quot;vehicle3&quot; name=&quot;vehicle3&quot; 
+  value=&quot;Boat&quot;&gt;<br>&nbsp; &lt;label for=&quot;vehicle3&quot;&gt; I have a boat&lt;/label&gt;<br>
+ &lt;/form&gt;
+ </fieldset>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The Submit Button</h2></legend>
+<p>The &lt;input type="submit"&gt; defines a button for submitting the form data to a form-handler.</p>
+<p>The form-handler is typically a file on the server with a script for processing 
+input data.</p>
+<p>The form-handler is specified in the form's action 
+attribute.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>A form with a submit button:</p>
+ &lt;form action="/action_page.php"&gt;<br>&nbsp; &lt;label for=&quot;fname&quot;&gt;First 
+  name:&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; 
+  value=&quot;John&quot;&gt;&lt;br&gt;<br>&nbsp; &lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;&lt;br&gt;<br>&nbsp; 
+  &lt;input type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; value=&quot;Doe&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; 
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>&lt;/form&gt;
+  </fieldset>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="/action_page.php" target="_blank">
+First name:<br>
+<input type="text" name="firstname" value="John"><br>
+Last name:<br>
+<input type="text" name="lastname" value="Doe"><br><br>
+<input type="submit" value="Submit">
+</form> 
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The Action Attribute</h2></legend>
+<p>The action attribute defines the action to be performed when the form is submitted.</p>
+<p>Usually, the form data is sent to a file on the server when the user clicks on the submit button.</p>
+<p>In the example above, the form data is sent to a file called &quot;action_page.php&quot;. 
+This file contains a server-side script that handles the form data:</p>
+ &lt;form <strong>action="/action_page.php</strong>"&gt;<br>
+<p>If the action attribute is omitted, the action is set to the current page.</p>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The Target Attribute</h2></legend>
+<p>The target attribute specifies where to 
+display the response that is received after submitting the form.</p>
+<p>The target attribute can have one of the 
+following values:</p>
+<fieldset style="background-color: white;">
+<table> 
+  <tr>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>_blank</td>
+    <td>The response is displayed in a new window or tab</td>
+  </tr>
+  <tr>
+    <td>_self</td>
+    <td>The response is displayed in the same frame</td>
+  </tr>
+  <tr>
+    <td>_parent</td>
+    <td>The response is displayed in the parent frame</td>
+  </tr>
+  <tr>
+    <td>_top</td>
+    <td>The response is displayed in the full body of the window</td>
+  </tr>
+  <tr>
+    <td><i>framename</i></td>
+    <td>The response is displayed in a named iframe</td>
+  </tr>
+  </table>
+  </fieldset>
+<p>The default value is _self which means that 
+the response will open i the current window.</p>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>Here, the submitted result will open in a new browser tab:</p>
+&lt;form action="/action_page.php" target="_blank&quot;&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The Method Attribute</h2></legend>
+<p>The method attribute specifies the HTTP 
+method to use used when submitting the form data.</p>
+<p>The form-data can be sent as URL variables (with method=&quot;get&quot;) 
+or as HTTP post transaction (with method=&quot;post&quot;).</p>
+<p>The default HTTP method when submitting form data is GET.&nbsp;</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>This example uses the GET method when submitting the form data:</p>
+
+&lt;form action="/action_page.php" method="get&quot;&gt;
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+
+<h3>Example</h3>
+  <p>This example uses the POST method when submitting the form data:</p>
+&lt;form action="/action_page.php" method="post&quot;&gt;
+</fieldset>
+<br>
+<p><b>Notes on GET:</b> </p>
+<br>
+  1) Appends the form data to the URL, in name/value pairs<br>
+  2) NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)<br>
+  3) The length of a URL is limited (2048 characters)<br>
+  4) Useful for form submissions where a user wants to bookmark the result<br>
+  5) GET is good for non-secure data, like query strings in Google<br>
+<br>
+<p><b>Notes on POST:</b> </p>
+<br>
+  1) Appends the form data inside the body of the HTTP request (the submitted 
+  form data is not shown in the URL)<br>
+  2) POST has no size limitations, and can be used to send large amounts of data.<br>
+  3) Form submissions with POST cannot be bookmarked<br>
+<br>
+<p><strong>Tip:</strong> Always use POST if the form data contains sensitive or personal information!</p>
+
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>The Name Attribute</h2></legend>
+<p>Each input field must have a name attribute to be submitted.</p>
+<p>If the name attribute is omitted, the value of that input field will not be sent at all.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+<p>This example will not submit the value of the &quot;First name&quot; input field:&nbsp;</p>
+ &lt;form action="/action_page.php"&gt;<br>&nbsp; &lt;label for=&quot;fname&quot;&gt;First 
+  name:&lt;/label&gt;&lt;br&gt;<br>&nbsp; &lt;input type=&quot;text&quot; id=&quot;fname&quot; value=&quot;John&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&nbsp; 
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>&lt;/form&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>List of All &lt;form&gt; Attributes</h2></legend>
+<fieldset style="background-color: white;">
+<table>
+ <tr>
+  <th>Attribute</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>accept-charset</td>
+  <td>Specifies the character encodings used for form submission</td>
+ </tr>
+ <tr>
+  <td>action</td>
+  <td>Specifies where to send the form-data when a form is submitted</td>
+ </tr>
+
+ <tr>
+  <td>method</td>
+  <td>Specifies the HTTP method to use when sending form-data</td>
+ </tr>
+ <tr>
+  <td>name</td>
+  <td>Specifies the name of the form</td>
+ </tr>
+ <tr>
+  <td>novalidate</td>
+  <td>Specifies that the form should not be validated when submitted</td>
+ </tr>
+ <tr>
+  <td>rel</td>
+  <td>Specifies the relationship between a linked resource and the current 
+  document</td>
+ </tr>
+ <tr>
+  <td>target</td>
+  <td>Specifies where to display the response that is received after submitting 
+  the form</td>
+ </tr>
+</table>
+</fieldset>
+</fieldset>
+
+  </div>
+</div>
+<br>
+<br>
+
+
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="frame.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+ 
+  Ariba Ahmed
+  </div>
+
+  <div class="col">
+   <a class="prev" href="inputform.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+</div>
+</body>
+</html>

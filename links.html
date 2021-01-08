@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Links</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+table {
+  font-family:sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  display: flex;
+}
+.linkbutton {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+    .col-container {
+    display: table;
+    width: 100%;
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover{
+  background-color: #555;
+  color: white;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+.linkbutton {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="W3Schools.com" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+<div class="navbar">
+ <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+</div>
+
+<div class="row">
+  <div class="side">
+  
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" class="active" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML/CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+</ul>
+
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+ 
+<h1>HTML <span class="color_h1">Links</span></h1>
+
+<hr>
+<p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Links - Hyperlinks</h2></legend>
+<p>HTML links are hyperlinks.</p>
+<p>You can click on a link and jump to another document.</p>
+<p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+  <p><strong>Note:</strong> A link does not have to be text. A link can be an image 
+  or any other HTML element!</p>
+<hr>
+</fieldset>
+<br>
+<br>
+<Br>
+<fieldset>
+<legend><h2>HTML Links - Syntax</h2></legend>
+<p>The HTML &lt;a&gt; tag defines a hyperlink. 
+It has the following syntax:</p>
+
+&lt;a href=&quot;<i>url</i>&quot;&gt;<i>link text</i>&lt;/a&gt;
+
+<p>The most important attribute of the &lt;a&gt; <a> element is the 
+href attribute, which indicates the link's destination.</a></p>
+<p>The <em>link text</em> is the part that will be visible to the reader.</p>
+<p>Clicking on the link text, will send the reader to the specified URL address.</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+  <p>This example shows how to create a link to xyz.com:</p>
+
+&lt;a href=&quot;https://www.xyz.com/&quot;&gt;Visit xyz.com!&lt;/a&gt;
+</td>
+<td>
+      <center>
+<b>Differentiation of a link and no-link:</b>
+<br>
+<br>
+<img src="https://weblog.west-wind.com/images/2019/Non-Navigating-Links-for-JavaScript-Handling/LinkWithNoHref.png" alt="xyz" style="border:10px solid green;width:300px;height:200px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+
+
+<p>By default, links will appear as follows in all browsers:</p>
+<br>
+  1) An unvisited link is underlined and blue<br>
+  2) A visited link is underlined and purple<br>
+  3) An active link is underlined and red<br>
+<br>
+  <p><strong>Tip:</strong> Links can of course be styled with CSS, to get 
+  another look!</p>
+
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Links - The target Attribute</h2></legend>
+<p>By default, the linked page will be displayed in the current browser window. 
+To change this, you must specify another target for the link.</p>
+<p>The target attribute specifies where to open the linked document.</p>
+<p>The target attribute can have one of the following values:</p>
+<br>
+  1) _self - Default. Opens the document in 
+  the same window/tab as it was clicked<br>
+  2) _blank - Opens the document in a new window or tab<br>
+  3) _parent - Opens the document in the parent frame<br>
+  4) _top - Opens the document in the full body of the window<br>
+</br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+  <p>Use target=&quot;_blank&quot; to open the linked document in a new browser window or tab:</p>
+
+ &lt;a href=&quot;https://www.xyz.com/&quot;
+target=&quot;_blank&quot;&gt;Visit xyz!&lt;/a&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Absolute URLs vs. Relative URLs</h2></legend>
+<p>Both examples above are using an <strong>absolute URL</strong> (a full web address) 
+in the href attribute.</p>
+<p>A local link (a link to a page within the same website) is specified with a 
+<strong>relative URL</strong> (without 
+the &quot;https://www&quot; part):</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+  &lt;h2&gt;Absolute URLs&lt;/h2&gt;<br>&lt;p&gt;&lt;a href=&quot;https://www.xyz.org/&quot;&gt;xyz&lt;/a&gt;&lt;/p&gt;<br>
+  &lt;p&gt;&lt;a href=&quot;https://www.google.com/&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;<br><br>&lt;h2&gt;Relative 
+  URLs&lt;/h2&gt;<br>&lt;p&gt;&lt;a href=&quot;html_images.asp&quot;&gt;HTML Images&lt;/a&gt;&lt;/p&gt;<br>&lt;p&gt;&lt;a href=&quot;/css/default.asp&quot;&gt;CSS 
+  Tutorial&lt;/a&gt;&lt;/p&gt;
+  </fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+
+<legend><h2>HTML Links - Use an Image as a Link</h2></legend>
+<p>To use an image as a link, just put the &lt;img&gt; 
+tag inside the &lt;a&gt; tag:</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+&lt;a href=&quot;default.asp&quot;&gt;<br>&lt;img src=&quot;smiley.gif&quot; alt=&quot;HTML tutorial&quot; style=&quot;width:42px;height:42px;&quot;&gt;<br>&lt;/a&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Link to an Email Address</h2></legend>
+<p>Use 
+mailto: inside the 
+href attribute to create a link that opens the user's email program (to 
+let them send a new email):</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+
+  &lt;a href=&quot;mailto:someone@example.com&quot;&gt;Send email&lt;/a&gt;
+  </td>
+  <td>
+        <center>
+<b>Mail dialog box will open on clicking it:</b>
+<br>
+<br>
+<img src="https://www.rapidtables.com/web/html/mailto/example2.png" alt="xyz" style="border:10px solid pink;width:300px;height:250px;">
+</center>
+  </td>
+  </tr>
+  </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Button as a Link</h2></legend>
+<p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+<p>JavaScript allows you to specify what happens at certain events, such as a click of a button:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td><h3>Example</h3>
+
+&lt;button 
+  onclick=&quot;document.location='default.asp'&quot;&gt;Go to my page&lt;/button&gt;
+  </td>
+  <td>
+          <center>
+<b>Mail dialog box will open on clicking it:</b>
+<br>
+<br>
+<img src="https://www.wikihow.com/images/thumb/9/94/Make-a-HTML-Link-Button-Step-5-Version-3.jpg/-crop-342-184-244px-Make-a-HTML-Link-Button-Step-5-Version-3.jpg" alt="xyz" style="border:10px solid LightSkyBlue;width:340px;height:250px;">
+</center>
+  </td>
+  </tr>
+</table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Link Titles</h2></legend>
+<p>The title attribute specifies extra information about an element.
+The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+  &lt;a href=&quot;https://www.xyz.com/html/&quot; title=&quot;Go to HTML 
+  section&quot;&gt;Visit our HTML Tutorial&lt;/a&gt;
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>More on Absolute URLs and Relative URLs</h2></legend>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+<p>Use a full URL to link to a web page:&nbsp;</p>
+
+  &lt;a href=&quot;https://www.xyz.com/html/default.asp&quot;&gt;HTML tutorial&lt;/a&gt;
+<p>
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+<p>Link to a page located in the html folder on the current web site:&nbsp;</p>
+
+  &lt;a href=&quot;/html/default.asp&quot;&gt;HTML tutorial&lt;/a&gt;
+<p>
+</fieldset>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+<p>Link to a page located in the same folder as the current page:&nbsp;</p>
+
+  &lt;a href=&quot;default.asp&quot;&gt;HTML tutorial&lt;/a&gt;
+<p>
+
+</fieldset>
+<Br>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Summary</h2></legend>
+<br>
+  1) Use the &lt;a&gt; element to define a link<br>
+  2) Use the href attribute to define the link address<br>
+  3) Use the target attribute to define where to open the linked document<br>
+  4) Use the &lt;img&gt; element (inside &lt;a&gt;) 
+  to use an image as a link<br>
+  5) Use the 
+  mailto: scheme inside the 
+href attribute to create a link that opens the user's email program<br>
+
+</fieldset>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Link Tags</h2></legend>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th style="width:30%">Tag</th>
+<th>Description</th></tr><tr>
+<td>&lt;a&gt;</a></td><td>Defines a hyperlink</td></tr>
+</table>
+</fieldset>
+</fieldset>
+  
+<br>
+  <br>
+  <h1>HTML <span class="color_h1">Links - Different Colors</span></h1>
+
+<hr>
+<p>An HTML link is displayed in a different color depending on 
+whether it has been visited, is unvisited, or is active.</p>
+<br>
+<br>
+<fieldset>
+<legend><h2>HTML Link Colors</h2></legend>
+<p>By default, a link will appear like this (in all browsers):</p>
+<br>
+  1) An unvisited link is underlined and blue<br>
+  2) A visited link is underlined and purple<br>
+  3) An active link is underlined and red<br>
+<br>
+<p>You can change the link state colors, by using CSS:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<td>
+<h3>Example</h3>
+<p>Here, an unvisited link will be green with no underline. A visited link 
+will be pink with no underline. An active link will be yellow&nbsp; and underlined. 
+In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+
+&lt;style&gt;<br>a:link {<br>&nbsp;&nbsp;color: green; <br>&nbsp;&nbsp;background-color: transparent; 
+  <br>&nbsp;&nbsp;text-decoration: none;<br>}<br><br>
+a:visited {<br>&nbsp; color: pink;<br>&nbsp; background-color: transparent;<br>&nbsp; 
+  text-decoration: none;<br>}<br><br>a:hover {<br>&nbsp; color: red;<br>&nbsp; background-color: transparent;<br>
+  &nbsp; text-decoration: underline;<br>}<br><br>
+  a:active {<br>&nbsp; color: yellow;<br>&nbsp; background-color: transparent;<br>&nbsp; 
+  text-decoration: underline;<br>}<br>&lt;/style&gt;
+  </td>
+  <td>
+            <center>
+<b>An example of link color changing:</b>
+<br>
+<br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-12-08-at-12.58.55-AM.png" alt="xyz" style="border:10px solid purple;width:340px;height:250px;">
+</center>
+  </td>
+  </tr>
+  </table>
+</fieldset>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Link Buttons</h2></legend>
+<p>A link can also be styled as a button, by using CSS:</p>
+<a class="linkbutton" href="www.xyz.com">This is a link</a>
+<br>
+<br>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;style&gt;<br>a:link, a:visited {<br>&nbsp; background-color: red;<br>&nbsp; 
+  color: white;<br>&nbsp; padding: 15px 25px;<br>&nbsp; text-align: center;<br>&nbsp; 
+  text-decoration: none;<br>&nbsp; display: inline-block;<br>}<br><br>&lt;/style&gt;
+
+</fieldset>
+<Br>
+</fieldset>
+<br>
+<br>
+
+<br>
+</div>
+</div>
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="mainstyle.html" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+  </div>
+
+  <div class="col">
+   <a class="prev" href="images.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+</div>
+</body>
+</html>

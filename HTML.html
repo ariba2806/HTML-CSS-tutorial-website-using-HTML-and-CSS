@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<head>
+<title>HTML Tutorial</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: LightSkyBlue;
+  color:black;
+  height:200px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: auto;
+  background-color: #333;
+  position: sticky;
+ top: 0;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.row {  
+  
+  display: flex;
+}
+
+
+.side {
+
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+fieldset {
+  background-color:#f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border: 2px solid #555;
+}
+
+li a.active {
+  background-color: LightSkyBlue;
+  color: white;
+}
+
+li a:hover{
+  background-color: #555;
+  color: white;
+}
+.redText
+    {
+        color:red;
+    }
+    .blackText
+    {
+        color:black;n
+        font-weight:bold;
+    }
+     .greentext
+    {
+        color:green;
+        font-weight:bold;
+    }
+     .purpletext
+    {
+        color:purple;
+        font-weight:bold;
+    }
+      .yellowtext
+    {
+        color:yellow;
+        font-weight:bold;
+    }
+    .col-container {
+    display: table; 
+    width: 100%; 
+}
+
+.col {
+    display: table-cell; 
+}
+.prev {
+  background-color:#2E9AFE;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+
+}
+legend {
+  background-color: LightSkyBlue;
+  color: black;
+  padding: 0px 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/IIIT-BH_Official_Logo.png" alt="IIIT-logo" style="border:10px solid black;float:left;width:170px;height:170px;">
+  <u><h1><span class="redText">EASY </span><span class="yellowtext"> & </span><span class="greentext"> FUN </span><span class="blackText"> " HTML" </span><span class="purpletext"> TUTORIAL</span></u><span style='font-size:70px;'>&#128173;</span></h1>
+  <h3><p><b>Learn and Create Amazing Websites</b></p></h3>
+</div>
+
+<div class="navbar">
+ <a href="HTML.html" class="active">Home</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS Quiz</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML-Form Quiz</a>
+  
+  <a href="assignment.html">Assignment</a>
+  
+</div>
+
+<div class="row">
+  <div class="side">
+
+<h2>HTML Basics</h2>
+<ul>
+<li><a target="_top" class="active" href="HTML.html">HTML HOME</a></li><br>
+<li><a target="_top" href="intro.html">HTML Basic</a></li><br>
+<li><a target="_top" href="styles.html">HTML Style</a></li><br>
+<li><a target="_top" href="styling.html">HTML Colors and Icons</a></li><br>
+
+<li><a target="_top" href="links.html">HTML Links</a></li><br>
+<li><a target="_top" href="images.html">HTML Images</a></li><br>
+
+<li><a target="_top" href="table.html">HTML Tables</a></li><br>
+
+<li><a target="_top" href="frame.html">HTML Iframes</a></li><br>
+<li><a target="_top" href="mainstyle.html">HTML /CSS</a></li><br>
+<li><a target="_top" href="list.html">HTML Lists</a></li><br>
+
+<li><a target="_top" href="othertags.html">HTML Block &amp; Inline</a></li><br>
+</ul>
+
+<br>
+
+<h2>HTML Forms</h2>
+<ul>
+<li><a target="_top" href="forms.html">HTML Forms</a></li><br>
+<li><a target="_top" href="inputform.html">HTML Form-input</a></li><br>
+<li><a target="_top" href="formattribute.html">HTML Form-Attribute</a></li><br>
+</ul>
+<h2>HTML Quizes</h2><br>
+<ul>
+<li><a target="_top" href="assignment.html">HTML Assignments</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSfelu5lDRpt7mCn5g11jz6qVsCa_axpyLe5QnKQ5Ez08A_cQg/viewform?vc=0&c=0&w=1&flr=0">HTML TAGS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSdQI4jbX-vi9swK0gEujJ_AwexsyLT7jIpPv9FlQJqHpTX9pw/viewform?vc=0&c=0&w=1&flr=0">CSS QUIZ</a></li><br>
+<li><a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLScmeLeD4SNBLDmOUwC3TjYXQZH_vHVnHvWrRyO_DaKpEOwOXQ/viewform?vc=0&c=0&w=1&flr=0">HTML FORMS QUIZ</a></li><br>
+</ul>
+
+<h2>Try it</h2>
+<ul>
+<li><a target="_top" href="https://html-online.com/editor/">TRY YOUR CODE HERE</a></li><br>
+</ul>
+<br>
+
+
+      <br><br>
+
+  </div>
+  <div class="main">
+  <fieldset>
+   <legend><h1>HTML Tutorial</h1></legend>
+
+<p><b>HTML</b> is the standard markup language for Web pages.</p>
+<p>With HTML you can create your own Website.</p>
+  <p>This tutorial follows the latest HTML5 standard.</p>
+<p>HTML is easy to learn - You will enjoy it!</p>
+<a href="intro.html">Learn HTML Basics&raquo;</a>
+
+<hr>
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h2>Easy Learning with HTML</h2></legend>
+
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>&lt;/html&gt;
+</fieldset>
+
+</fieldset>
+<br>
+<br>
+<br>
+<fieldset>
+<legend><h1>HTML Introduction</h1></legend>
+<hr>
+<p>HTML is the standard markup language for creating Web pages.</p>
+<hr>
+<h2>What is HTML?</h2>
+
+<b>HTML stands for Hyper Text Markup Language</b><br>
+  HTML is the standard markup language for creating Web pages<br>
+
+ HTML describes the structure of a Web page<br>
+  HTML consists of a series of elements<br>
+  HTML elements tell the browser how to display the content<br>
+  HTML elements label pieces of content such as &quot;this is a heading&quot;, &quot;this 
+  is a paragraph&quot;, &quot;this is a link&quot;, etc.
+
+<hr>
+<br>
+
+
+<h2>A Simple HTML Document</h2>
+<fieldset style="background-color: white;">
+<h3>Example</h3>
+
+ &lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+ &lt;/head&gt;<br>
+&lt;body&gt;<br><br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+    &lt;/body&gt;<br>&lt;/html&gt;
+    </fieldset>
+<br>
+<h3>Example Explained</h3>
+
+The &lt;!DOCTYPE html&gt; declaration defines 
+that this document is an HTML5 document<br>
+The &lt;html&gt; element is the root element of an HTML 
+page<br>
+ The &lt;head&gt; element contains meta information about the 
+ HTML page<br>
+The &lt;title&gt; element specifies a title for the 
+ HTML page (which is shown in the browser's title bar or in the page's tab)<br>
+ The &lt;body&gt; element defines the
+ document's body, and is a container for all the visible contents, such as 
+ headings, paragraphs, images, hyperlinks, tables, lists, etc.<br>
+The &lt;h1&gt; element defines a large heading<br>
+The &lt;p&gt; element defines a paragraph
+
+<hr>
+<br>
+<h2>What is an HTML Element?</h2>
+<p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+
+
+<p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+
+<fieldset style="background-color: white;">
+<table>
+<tr>
+<th>Start tag</th>
+<th>Element content</th>
+<th>End tag</th>
+</tr>
+<tr>
+<td>&lt;h1&gt;</td>
+<td>My First Heading</td>
+<td>&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td>&lt;p&gt;</td>
+<td>My first paragraph.</td>
+<td>&lt;/p&gt;</td>
+</tr>
+<tr>
+<td>&lt;br&gt;</td>
+<td><em>none</em></td>
+<td><em>none</em></td>
+</tr>
+</table>
+</fieldset>
+
+
+<p><strong>Note:</strong> Some HTML elements have no content (like the &lt;br&gt; 
+element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+<hr>
+
+<br>
+
+<h2>HTML Page Structure</h2>
+<p>Below is a visualization of an HTML page structure:</p>
+<fieldset style="background-color: white;">
+<table>
+<tr><td><p>&lt;html&gt;
+<p>&lt;head&gt;
+<p>&lt;title&gt;Page title&lt;/title&gt;
+</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;Heading 1 example&lt;/h1&gt;</p>
+<p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+<p>&lt;h1&gt;Heading 2 example&lt;/h1&gt;</p>
+<p>&lt;p&gt;This is another paragraph.&lt;/p&gt;</p>
+<p>
+&lt;/body&gt;
+</p>
+<p>
+&lt;/html&gt;
+</td>
+</p>
+<td>
+<center>
+<b>Result will be something as follows:</b>
+<br>
+<br>
+<img src="https://tutorials4u.com/html/graphics/examples/tutorial-3-index.html.jpg" alt="xyz" style="border:10px solid LightSkyBlue;width:350px;height:350px;">
+</center>
+</td>
+</tr>
+</table>
+</fieldset>
+<p><strong>Note:</strong> Only the content inside the &lt;body&gt; section (the white area above) 
+will be displayed in a browser.</p>
+
+<br>
+  
+</fieldset>
+<hr>
+<br>
+
+
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="footer">
+<div class="col-container">
+  <div class="col">
+   <a class="prev" href="#" target="_blank">&#x23EA; PREV PAGE</a>
+  </div>
+
+  <div class="col">
+    <h2>Website by-:</h2>
+
+  Ariba Ahmed
+
+  </div>
+
+  <div class="col">
+   <a class="prev" href="intro.html" target="_blank">NEXT PAGE &#9193;</a>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
